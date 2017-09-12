@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="my-todo-main">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class MyTodoMain extends Polymer.Element {
+      static get is() { return 'my-todo-main'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'my-todo-main'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyTodoMain.is, MyTodoMain);
+  </script>
+</dom-module>

@@ -1,0 +1,7 @@
+{
+  "name": "my-todo-app",
+  "short_name": "my-todo-app",
+  "description": "Udemy tutorial converting Polymer 1.0 to Polymer 2.0",
+  "start_url": "/",
+  "display": "standalone"
+}
